@@ -63,7 +63,7 @@ class Movies extends Component {
             ))}
           </tbody>
         </table>
-        <Pagination itemsCount={count} pageSizes={this.state.pageSize} onPageChange={this.handlePageChange} />
+        <Pagination itemsCount={count} pageSizes={10} onPageChange={this.handlePageChange} />
       </React.Fragment>
     );
   }
