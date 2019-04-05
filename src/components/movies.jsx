@@ -7,7 +7,7 @@ class Movies extends Component {
   state = {
     movies: getMovies(),
     currentPage: 1,
-    pageSizes: 4
+    pageSize: 4
   };
 
   handleDelete = movie => {
@@ -71,7 +71,7 @@ class Movies extends Component {
         </table>
         <Pagination
           itemsCount={count}
-          pageSize={10}
+          pageSize={pageSize}
           currentPage={currentPage}
           onPageChange={this.handlePageChange}
         />
